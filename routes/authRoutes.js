@@ -1,0 +1,12 @@
+const { register, login } = require("../controllers/authController");
+const { insertRec } = require("../controllers/recController");
+const { checkUser } = require("../middlewares/authMiddleware");
+
+const router = require("express").Router();
+
+router.post("/", checkUser);
+router.post("/register", register);
+router.post("/login", login);
+router.post("/insertRec", insertRec);
+
+module.exports = router;
