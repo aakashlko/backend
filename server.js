@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT | 3001;
 
 const mongoURL =
-  "mongodb+srv://aakash:aakash2507@user.7elp7a6.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://aakash:<password>@user.7elp7a6.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose
   .connect(mongoURL, { useNewUrlParser: true })
